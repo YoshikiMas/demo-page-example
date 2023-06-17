@@ -1,0 +1,142 @@
+
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Example of Audio Demo Page</title>
+      <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+      <script>
+         function play(path) {{
+           var player = document.getElementById('player');
+           player.src = path;
+           player.play();
+         }}
+      </script>
+      <style>
+         .audio-cell {
+         /* Center audio widgets in the table cell. */
+         text-align: center;
+         padding-bottom: 1px;
+         padding-top: 1px;
+         }
+         .audio-cell-padded {
+         text-align: center;
+         padding-bottom: 10px;
+         padding-top: 10px;
+         }
+         .audio-header {
+         /* Don't wrap header text. */
+         white-space: nowrap;
+         /* Some breaking space between headers for readability. */
+         padding-right: 5px;
+         padding-left: 5px;
+         }
+         .reference-cell {
+         /* For uniformity and to wrap long reference text, limit the reference cell's width. */
+         width: 25%;
+         padding-top: 20px;
+         padding-bottom: 20px;
+         }
+         .sample audio {
+         vertical-align: middle;
+         padding-left: 3px;
+         padding-right: 3px;
+         }
+         .round-button {
+         box-sizing: border-box;
+         display:block;
+         width:30px;
+         height:30px;
+         padding-top: 8px;
+         padding-left: 3px;
+         line-height: 6px;
+         border: 1.2px solid #000;
+         border-radius: 50%;
+         color: #000;
+         text-align:center;
+         background-color: rgba(0,0,0,0.00);
+         font-size:6px;
+         box-shadow: 0px 0px 2px rgba(0,0,0,1);
+         transition: all 0.2s ease;
+         }
+         .round-button:hover {
+         background-color: rgba(0,0,0,0.0);
+         box-shadow: 0px 0px 4px rgba(0,0,0,1);
+         }
+         .round-button:active {
+         background-color: rgba(0,0,0,0.01);
+         box-shadow: 0px 0px 1px rgba(0,0,0,1);
+         }
+      </style>
+   </head>
+   <body>
+     <div class="main">
+       <article>
+         <header>
+            <h1>LibriTTS-R: Restoration of a Large-Scale Multi-Speaker TTS Corpus</h1>
+         </header>
+      </article>
+      <div>
+        <p>
+		<!-- <a href="https://sites.google.com/view/yoshiki-masuyama/home">Yoshiki Masuyama</a>, -->
+        Author 1,
+	  	Author 2,
+        Author 3,
+		</p>
+      </div>
+      <p><b>Abstract: </b>Abstruct will be here
+<br /><br />
+<br /><br />
+      </p>
+
+
+
+<hr>
+<h2 id="intermediate">Evaluation on Speech Signals :</h2>
+<p>
+This section shows examples of reconstructed speech signals. For more details, please refer our paper.
+</p>
+
+
+
+<p>
+<table>
+<tbody>
+    <tr>
+        <td align="center"> </td>
+        <td align="center"> Original</td>
+        <td align="center"> Griffin-Lim algorithm</td>
+    </tr>
+    <tr>
+        <td align="center"> Example 1</audio></td>
+        <td align="center"> <audio controls=""><source src="data/original_LJ001-0094.wav"></audio></td>
+        <td align="center"> <audio controls=""><source src="data/gla_LJ001-0094.wav"></audio></td>
+    </tr>
+    <tr>
+        <td align="center"> Example 2</audio></td>
+        <td align="center"> <audio controls=""><source src="data/original_LJ003-0088.wav"></audio></td>
+        <td align="center"> <audio controls=""><source src="data/gla_LJ003-0088.wav"></audio></td>
+    </tr>
+</tbody>
+</table><br />
+
+</p>
+
+
+
+<hr>
+<h2 id="references">Acknowledgement:</h2>
+<p>
+Acknowledgement will be here. 
+</p>
+
+<h2 id="references">References:</h2>
+<p>
+[1] Keith Ito, "The LJ Speech Dataset."
+[<a href="https://keithito.com/LJ-Speech-Dataset/">page</a>]<br/>
+[2] D. Griffin and J. Lim, "Signal estimation from modified short-time Fourier transform," IEEE Trans. Acoust., Speech, Signal Process., vol. 32, no. 2, pp. 236--243, Apr. 1984.
+[<a href="https://doi.org/10.1109/TASSP.1984.1164317">paper</a>]<br/>
+</p>
+
+      </div>
+   </body>
+</html>
